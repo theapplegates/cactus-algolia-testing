@@ -17,7 +17,9 @@ export default defineConfig({
 		tailwind({
 			config: { applyBaseStyles: false },
 		}),
-		image(),
+		image({
+			serviceEntryPoint: '@astrojs/image/sharp',
+		  }),
 		sitemap(),
 	],
 });
