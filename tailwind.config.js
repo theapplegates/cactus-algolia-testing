@@ -7,6 +7,10 @@ module.exports = {
 		aspectRatio: false,
 	},
 	theme: {
+		fontFamily: {
+			'display': ['Crimson Pro'],
+			'body': ['Crimson Pro'],
+		},
 		extend: {
 			colors: {
 				bgColor: "hsl(var(--theme-bg) / <alpha-value>)",
