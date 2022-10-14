@@ -52,6 +52,7 @@
 		"atomic-algolia": "^0.3.19",
 		"esbuild-darwin-arm64": "^0.15.11",
 		"fsevents": "^2.3.2",
-		"sharp": "^0.31.1"
+		"sharp": "^0.31.1",
+		"shiki": "^0.11.1"
 	}
 }

@@ -22,6 +22,19 @@ const url = new URL(Astro.request.url);
 		});
 	});
 </script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+<script type="text/javascript">
+	algoliasearchNetlify({
+		appId: 'SHVKUXZTJL',
+		apiKey: 'e332cddfa7561991ac04265a52effef6',
+		siteId: 'fbc9b6da-d4a3-489e-945a-ded4bf27df0b',
+		branch: 'main',
+		selector: 'div#search',
+	});
+</script>
+<div id="search"></div>
+
 
 <header>
 	<span>
