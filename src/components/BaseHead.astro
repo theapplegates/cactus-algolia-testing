@@ -31,6 +31,11 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <link rel="manifest" href="/manifest.webmanifest" />
 <meta name="theme-color" content={siteMeta.themeColorLight} />
 
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"
+/>
+
 <!-- Open Graph / Facebook -->
 <meta property="og:locale" content={siteMeta.ogLocale} />
 <meta property="og:type" content="website" />
