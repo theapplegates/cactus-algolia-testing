@@ -17,19 +17,6 @@ const {
 
 <html lang={siteMeta.lang}>
 	<head>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
-	<script type="text/javascript">
-		algoliasearchNetlify({
-			appId: 'SHVKUXZTJL',
-			apiKey: 'e332cddfa7561991ac04265a52effef6',
-			siteId: 'fbc9b6da-d4a3-489e-945a-ded4bf27df0b',
-			branch: 'main',
-			selector: 'div#search',
-		});
-	</script>
-	<div id="search"></div>
-
 		<BaseHead title={title} description={description} image={image} />
 		<script define:vars={{ siteMeta }}>
 			const root = document.documentElement;
@@ -51,6 +38,10 @@ const {
 				colorThemeMetaTag.setAttribute("content", siteMeta.themeColorLight);
 			}
 		</script>
+		<link
+		  rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"
+		/>
 	</head>
 	<body>
 		<SkipLink />
@@ -59,5 +50,22 @@ const {
 			<slot />
 		</main>
 		<Footer />
+		<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+		<script>
+		  docsearch({
+			// Your Search API Key
+			apiKey: 'fa92ebfd8b0df4c599adabf9c45ade99',
+			// The index populated by the DocSearch scraper
+			indexName: 'Cactus-docusearch2',
+			// Your Algolia Application ID
+			appId: 'T79DSLV0K4',
+			// Replace inputSelector with a CSS selector
+			// matching your search input
+			inputSelector: 'div#search',
+			// Set debug to true to inspect the dropdown
+			debug: false,
+		  });
+		</script>
+		<div id="search"></div>r
 	</body>
 </html>

@@ -43,6 +43,9 @@
 		"typescript": "^4.8.2"
 	},
 	"dependencies": {
-		"sharp": "^0.31.0"
+		"algoliasearch": "^5.0.0-alpha.26",
+		"esbuild-darwin-arm64": "^0.15.11",
+		"fsevents": "^2.3.2",
+		"sharp": "^0.31.1"
 	}
 }
