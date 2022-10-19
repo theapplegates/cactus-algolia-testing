@@ -11,8 +11,8 @@
 		"format": "prettier -w ./src ./src/**/*.astro"
 	},
 	"devDependencies": {
-		"@astrojs/image": "^0.10.0",
-		"@astrojs/mdx": "^0.11.4",
+		"@astrojs/image": "latest",
+		"@astrojs/mdx": "latest",
 		"@astrojs/sitemap": "^1.0.0",
 		"@astrojs/tailwind": "^2.1.0",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
@@ -22,7 +22,7 @@
 		"@types/prettier": "^2.7.1",
 		"@typescript-eslint/eslint-plugin": "^5.40.0",
 		"@typescript-eslint/parser": "^5.40.0",
-		"astro": "^1.5.0",
+		"astro": "latest",
 		"astro-eslint-parser": "^0.7.2",
 		"autoprefixer": "^10.4.12",
 		"eslint": "^8.25.0",
@@ -40,7 +40,7 @@
 		"stylelint": "^14.13.0",
 		"stylelint-config-prettier": "^9.0.3",
 		"stylelint-config-standard": "^28.0.0",
-		"tailwindcss": "^3.1.8",
+		"tailwindcss": "latest",
 		"typescript": "^4.8.4"
 	},
 	"dependencies": {
@@ -48,11 +48,11 @@
 		"@algolia/autocomplete-theme-classic": "^1.7.1",
 		"@astrojs/renderer-preact": "^0.5.0",
 		"@astrojs/renderer-react": "^0.5.0",
-		"algoliasearch": "^4.14.2",
+		"algoliasearch": "latest",
 		"atomic-algolia": "^0.3.19",
 		"esbuild-darwin-arm64": "^0.15.11",
 		"fsevents": "^2.3.2",
-		"sharp": "^0.31.1",
+		"sharp": "latest",
 		"shiki": "^0.11.1"
 	}
 }
